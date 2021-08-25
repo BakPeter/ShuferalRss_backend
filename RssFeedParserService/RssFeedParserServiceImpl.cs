@@ -27,8 +27,8 @@ namespace RssFeedParserService
                     TextSyndicationContent tsc = (TextSyndicationContent)elem.Content;
                     item.Summary = tsc.Text;
                     
-                    item.PubDate = elem.PublishDate.Date.ToString();
-                    item.LatUpdateDate = elem.LastUpdatedTime.Date.ToString();
+                    item.PubDate = elem.PublishDate.DateTime.ToString();
+                    item.LatUpdateDate = elem.LastUpdatedTime.DateTime.ToString();
                     item.Link = elem.Links?[0].Uri.ToString();
                     
                     data.Add(item);

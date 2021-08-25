@@ -4,5 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DBRepositoryManagerContracts\DBRepositoryManagerContracts.csproj" />
+    <ProjectReference Include="..\DynamicLoaderService\DynamicLoaderService.csproj" />
+    <ProjectReference Include="..\RssFeedParserContracts\RssFeedParserContracts.csproj" />
+    <ProjectReference Include="..\RssLoaderContracts\RssLoaderContracts.csproj" />
+  </ItemGroup>
+
 
 </Project>
